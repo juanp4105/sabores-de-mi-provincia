@@ -38,7 +38,7 @@
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -99,7 +99,7 @@
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -161,7 +161,7 @@
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -222,7 +222,7 @@
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -283,7 +283,7 @@
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
