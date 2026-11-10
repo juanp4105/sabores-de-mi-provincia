@@ -35,7 +35,18 @@ function insignias(receta) {
 export function crearTarjeta(receta, cantonesPorId, indice = 0) {
   const canton = cantonesPorId.get(receta.canton);
   const imagen = h('div', { class: 'tarjeta__imagen' });
-  imagen.innerHTML = ilustracion(receta.tipo, indice); // texto fijo del propio sitio, no datos externos
+  if (receta.imagen?.src) {
+    // Foto real (o de referencia): se muestra con su texto alternativo
+    imagen.append(h('img', {
+      src: receta.imagen.src,
+      alt: enIdioma(receta.imagen.alt),
+      loading: 'lazy',
+      width: '1536',
+      height: '1024',
+    }));
+  } else {
+    imagen.innerHTML = ilustracion(receta.tipo, indice); // texto fijo del propio sitio, no datos externos
+  }
 
   return h('li', { class: 'tarjeta' },
     imagen,

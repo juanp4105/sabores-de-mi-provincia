@@ -31,10 +31,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/repe-lojano.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato blanco con una crema espesa de color crema, con cilantro picado, queso desmenuzado y rodajas de aguacate; al fondo, plátanos verdes, medio aguacate y queso fresco.",
+          "en": "White bowl of a thick cream-colored soup topped with chopped cilantro, crumbled cheese and avocado slices; green plantains, half an avocado and fresh cheese in the background."
         },
         "autor": null,
         "licencia": null,
@@ -92,10 +92,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/tamal-lojano.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Tamal amarillo abierto, relleno de pollo desmenuzado y pimiento rojo, sobre hojas verdes en un plato de barro; detrás, otro tamal atado con cabuya, cebolla morada y una taza de café.",
+          "en": "Open yellow tamal filled with shredded chicken and red pepper on green leaves on a clay plate; behind it, another tamal tied with twine, pickled red onion and a cup of coffee."
         },
         "autor": null,
         "licencia": null,
@@ -154,10 +154,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/gallina-cuyada.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Presa de gallina dorada con papas amarillas en salsa, arroz blanco y ensalada de zanahoria, tomate y cebolla; a un lado, una salsa verde y un vaso de bebida roja.",
+          "en": "Golden chicken piece with yellow potatoes in sauce, white rice and a carrot, tomato and onion salad; a green sauce and a glass of red drink on the side."
         },
         "autor": null,
         "licencia": null,
@@ -215,10 +215,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/fritada-lojana.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato de barro con trozos de cerdo frito, mote blanco, maíz tostado, plátano maduro frito y tortillas de maíz; encurtido de cebolla y tomate, y salsas al fondo.",
+          "en": "Clay plate with fried pork pieces, white hominy, toasted corn, fried ripe plantain and corn patties; onion and tomato relish, and sauces in the background."
         },
         "autor": null,
         "licencia": null,
@@ -276,10 +276,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/horchata-lojana.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Jarra y vaso de vidrio con una bebida roja; alrededor, cuencos de madera con hierbas secas y flores, medio limón y hojas de menta.",
+          "en": "Glass pitcher and glass with a red drink; around them, wooden bowls with dried herbs and flowers, half a lemon and mint leaves."
         },
         "autor": null,
         "licencia": null,
