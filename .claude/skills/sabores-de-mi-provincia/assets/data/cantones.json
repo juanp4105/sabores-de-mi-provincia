@@ -1,0 +1,133 @@
+{
+  "nota": "Coordenadas APROXIMADAS de las cabeceras cantonales. Verificar con OpenStreetMap o una fuente oficial antes de publicar y cambiar coordenadas_verificadas a true.",
+  "cantones": [
+    {
+      "id": "loja",
+      "nombre": "Loja",
+      "cabecera": "Loja",
+      "lat": -3.993,
+      "lng": -79.204,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "calvas",
+      "nombre": "Calvas",
+      "cabecera": "Cariamanga",
+      "lat": -4.33,
+      "lng": -79.555,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "catamayo",
+      "nombre": "Catamayo",
+      "cabecera": "Catamayo",
+      "lat": -3.983,
+      "lng": -79.35,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "celica",
+      "nombre": "Celica",
+      "cabecera": "Celica",
+      "lat": -4.1,
+      "lng": -79.95,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "chaguarpamba",
+      "nombre": "Chaguarpamba",
+      "cabecera": "Chaguarpamba",
+      "lat": -3.85,
+      "lng": -79.65,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "espindola",
+      "nombre": "Espíndola",
+      "cabecera": "Amaluza",
+      "lat": -4.58,
+      "lng": -79.43,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "gonzanama",
+      "nombre": "Gonzanamá",
+      "cabecera": "Gonzanamá",
+      "lat": -4.23,
+      "lng": -79.43,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "macara",
+      "nombre": "Macará",
+      "cabecera": "Macará",
+      "lat": -4.38,
+      "lng": -79.94,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "olmedo",
+      "nombre": "Olmedo",
+      "cabecera": "Olmedo",
+      "lat": -3.94,
+      "lng": -79.65,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "paltas",
+      "nombre": "Paltas",
+      "cabecera": "Catacocha",
+      "lat": -4.06,
+      "lng": -79.64,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "pindal",
+      "nombre": "Pindal",
+      "cabecera": "Pindal",
+      "lat": -4.12,
+      "lng": -80.1,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "puyango",
+      "nombre": "Puyango",
+      "cabecera": "Alamor",
+      "lat": -4.033,
+      "lng": -80.033,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "quilanga",
+      "nombre": "Quilanga",
+      "cabecera": "Quilanga",
+      "lat": -4.298,
+      "lng": -79.399,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "saraguro",
+      "nombre": "Saraguro",
+      "cabecera": "Saraguro",
+      "lat": -3.62,
+      "lng": -79.23,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "sozoranga",
+      "nombre": "Sozoranga",
+      "cabecera": "Sozoranga",
+      "lat": -4.328,
+      "lng": -79.79,
+      "coordenadas_verificadas": false
+    },
+    {
+      "id": "zapotillo",
+      "nombre": "Zapotillo",
+      "cabecera": "Zapotillo",
+      "lat": -4.383,
+      "lng": -80.248,
+      "coordenadas_verificadas": false
+    }
+  ]
+}

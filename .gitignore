@@ -1,0 +1,7 @@
+# Archivos del sistema y temporales
+Thumbs.db
+.DS_Store
+desktop.ini
+*.log
+__pycache__/
+*.pyc
