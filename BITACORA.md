@@ -52,6 +52,12 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 - Punto 1: «Etapa 0: estructura, skill, datos semilla, README y bitácora»
 - Punto 2: «Etapa 1: primer diseño (portada, catálogo por cantón, idioma, accesibilidad)»
 
+**Publicación (adelantada por decisión de la persona)**
+- El proyecto se trasladó a una carpeta de Google Drive y se subió a https://github.com/juanp4105/sabores-de-mi-provincia (repositorio público).
+- GitHub Pages activado desde `main`, carpeta raíz. Dirección: https://juanp4105.github.io/sabores-de-mi-provincia/
+- Comprobado en línea: portada y catálogo cargan (20 recetas, 16 cantones). Todo sigue marcado «Contenido de ejemplo».
+- Nota: la guía pedía publicar tras la auditoría de la etapa 4; aquí se publica antes para poder revisar el diseño en vivo. No hay recetas reales ni datos personales en el sitio.
+
 **Pendiente para la próxima sesión**
 - Recoger las respuestas de la persona sobre el diseño y aplicarlas.
 - Mover el proyecto a una ruta corta (con confirmación).

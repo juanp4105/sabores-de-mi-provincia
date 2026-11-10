@@ -6,6 +6,12 @@ Es el instrumento de validación del proyecto de titulación (examen complexivo)
 
 > **Estado: prototipo en construcción (etapa 1 de 6).** Las recetas todavía no están completas ni validadas; se muestran con la insignia «Contenido de ejemplo». Los establecimientos serán ficticios y estarán rotulados como tales.
 
+## Sitio publicado (GitHub Pages)
+
+**https://juanp4105.github.io/sabores-de-mi-provincia/**
+
+Cada vez que se sube un cambio a la rama `main`, el sitio se actualiza solo en uno o dos minutos.
+
 ## Cómo ver el sitio en su computador
 
 El sitio no se abre con doble clic (el navegador bloquea la carga de los datos). Use el servidor incluido, que requiere tener [Python](https://www.python.org/downloads/) instalado:
