@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomendador (próximamente) · Sabores de mi provincia</title>
+  <meta name="description" content="El recomendador de recetas llegará en una próxima etapa del prototipo.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body data-pagina="recomendador">
+  <a class="saltar" href="#contenido" data-i18n="salto">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">
+        <img class="marca__logo" src="assets/img/icono.svg" alt="" width="48" height="48">
+        <span class="marca__texto">
+          <span class="marca__nombre">Sabores de mi provincia</span>
+          <span class="marca__sub" data-i18n="marca.sub">Cocina tradicional de Loja, Ecuador</span>
+        </span>
+      </a>
+      <div class="idioma" role="group" aria-label="Idioma" data-i18n-attr="aria-label:idioma.etiqueta">
+        <button type="button" class="idioma__boton" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button>
+        <button type="button" class="idioma__boton" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+    <nav class="contenedor nav" aria-label="Principal" data-i18n-attr="aria-label:nav.etiqueta">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="recetas.html" data-i18n="nav.recetas">Recetas</a></li>
+        <li><a href="recetas.html#cantones" data-i18n="nav.cantones">Cantones</a></li>
+        <li><a href="recomendador.html" aria-current="page" data-i18n="nav.recomendador">Recomendador</a></li>
+        <li><a href="acerca.html" data-i18n="nav.acerca">Acerca</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <div class="contenedor prox">
+      <p class="insignia insignia--proximamente" data-i18n="insignia.proximamente">Próximamente</p>
+      <h1 data-i18n="prox.recomendador.h1">Recomendador de recetas</h1>
+      <p data-i18n="prox.recomendador.texto">Esta función llegará en una próxima etapa del prototipo. Funcionará en su propio navegador, sin cuentas ni datos personales, y cada sugerencia vendrá con la razón por la que se propone.</p>
+      <p><a class="boton boton--primario" href="index.html" data-i18n="prox.volver">Volver al inicio</a></p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div>
+        <p class="pie__marca">Sabores de mi provincia</p>
+        <p data-i18n="pie.proyecto">Prototipo académico de la Maestría en Gestión Empresarial (EDES, UTPL).</p>
+        <p data-i18n="pie.ejemplo">Las recetas y los establecimientos que se muestran son de ejemplo hasta contar con validación y autorización escrita.</p>
+        <p data-i18n="pie.licencia">Licencia prevista del contenido: CC BY-NC-SA 4.0, con crédito a los portadores del saber.</p>
+        <p data-i18n="pie.ia">Construido con ayuda de inteligencia artificial (Claude Code); las decisiones las toma la persona responsable del proyecto.</p>
+      </div>
+      <p><a href="acerca.html" data-i18n="pie.acerca">Acerca del proyecto</a></p>
+    </div>
+  </footer>
+
+  <div id="anuncios" class="solo-lectores" role="status" aria-live="polite"></div>
+</body>
+</html>

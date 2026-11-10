@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores de mi provincia · Cocina tradicional de Loja, Ecuador</title>
+  <meta name="description" content="Recetas tradicionales de los 16 cantones de Loja, Ecuador, con su origen, su fuente y su estado de revisión a la vista.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body data-pagina="inicio">
+  <a class="saltar" href="#contenido" data-i18n="salto">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">
+        <img class="marca__logo" src="assets/img/icono.svg" alt="" width="48" height="48">
+        <span class="marca__texto">
+          <span class="marca__nombre">Sabores de mi provincia</span>
+          <span class="marca__sub" data-i18n="marca.sub">Cocina tradicional de Loja, Ecuador</span>
+        </span>
+      </a>
+      <div class="idioma" role="group" aria-label="Idioma" data-i18n-attr="aria-label:idioma.etiqueta">
+        <button type="button" class="idioma__boton" data-lang="es" lang="es" aria-pressed="true" aria-label="Español">ES</button>
+        <button type="button" class="idioma__boton" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+    <nav class="contenedor nav" aria-label="Principal" data-i18n-attr="aria-label:nav.etiqueta">
+      <ul>
+        <li><a href="index.html" aria-current="page" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="recetas.html" data-i18n="nav.recetas">Recetas</a></li>
+        <li><a href="recetas.html#cantones" data-i18n="nav.cantones">Cantones</a></li>
+        <li><a href="recomendador.html" data-i18n="nav.recomendador">Recomendador</a></li>
+        <li><a href="acerca.html" data-i18n="nav.acerca">Acerca</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo-portada">
+      <div class="contenedor hero__fila">
+        <div class="hero__texto">
+          <h1 id="titulo-portada" data-i18n="inicio.h1">Los sabores de los 16 cantones de Loja, en su cocina</h1>
+          <p class="hero__lead" data-i18n="inicio.lead">Platos tradicionales de la provincia, con su origen, su fuente y su estado de revisión a la vista, para que cocine, comparta y recorra Loja con confianza.</p>
+          <div class="hero__acciones">
+            <a class="boton boton--maiz" href="#cantones" data-i18n="inicio.cta.explorar">Explorar por cantón</a>
+            <a class="boton boton--contorno" href="recetas.html" data-i18n="inicio.cta.recetas">Ver todas las recetas</a>
+          </div>
+        </div>
+        <div class="hero__arte" aria-hidden="true">
+          <svg viewBox="0 0 320 260" focusable="false">
+            <path d="M70 150C40 90 70 40 130 28C150 80 130 130 70 150Z" fill="#2F5230" opacity=".55"/>
+            <path d="M250 150C282 92 256 42 200 30C178 80 196 132 250 150Z" fill="#2F5230" opacity=".55"/>
+            <path d="M120 60q-12 -16 0 -30q12 -14 0 -28M160 60q-12 -16 0 -30q12 -14 0 -28M200 60q-12 -16 0 -30q12 -14 0 -28" fill="none" stroke="#FBF6EC" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+            <rect x="52" y="104" width="216" height="26" rx="13" fill="#E8B638"/>
+            <path d="M64 128h192l-6 40c-4 34-30 58-62 58h-56c-32 0-58-24-62-58Z" fill="#FBF6EC"/>
+            <path d="M92 168h136" stroke="#A4502E" stroke-width="7" stroke-linecap="round"/>
+            <path d="M104 190h112" stroke="#A4502E" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+            <ellipse cx="258" cy="214" rx="34" ry="15" fill="#E8B638" transform="rotate(-18 258 214)"/>
+            <g fill="#A4502E" opacity=".55"><circle cx="246" cy="214" r="3"/><circle cx="258" cy="210" r="3"/><circle cx="270" cy="206" r="3"/><circle cx="252" cy="222" r="3"/><circle cx="264" cy="218" r="3"/></g>
+          </svg>
+        </div>
+      </div>
+      <svg class="hero__ola" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 60V28C180 4 360 4 540 24S900 56 1080 40 1320 8 1440 20V60Z"/></svg>
+    </section>
+
+    <div class="contenedor">
+      <div class="aviso" role="note">
+        <p><strong data-i18n="aviso.titulo">Prototipo en construcción.</strong> <span data-i18n="aviso.texto">Las recetas aún no están completas ni validadas: se muestran como «Contenido de ejemplo» hasta que los portadores del saber las revisen.</span></p>
+      </div>
+
+      <section class="seccion" id="cantones" aria-labelledby="titulo-cantones">
+        <h2 id="titulo-cantones" data-i18n="inicio.cantones.h2">Elija su cantón</h2>
+        <p class="seccion__intro" data-i18n="inicio.cantones.intro">La provincia de Loja tiene 16 cantones y cada uno guarda sus propios sabores.</p>
+        <ul class="chips" id="lista-cantones"></ul>
+      </section>
+
+      <section class="seccion" aria-labelledby="titulo-recomendador">
+        <div class="banda">
+          <h2 id="titulo-recomendador">
+            <span data-i18n="inicio.recomendador.h2">Recomendador de recetas</span>
+            <span class="insignia insignia--proximamente" data-i18n="insignia.proximamente">Próximamente</span>
+          </h2>
+          <p data-i18n="inicio.recomendador.texto">Cuéntele qué ingredientes tiene y para qué ocasión cocina. Le sugerirá recetas y le explicará por qué.</p>
+          <a class="boton boton--primario" href="recomendador.html" data-i18n="inicio.recomendador.enlace">Saber más</a>
+        </div>
+      </section>
+
+      <section class="seccion" aria-labelledby="titulo-destacadas">
+        <h2 id="titulo-destacadas" data-i18n="inicio.destacadas.h2">Recetas destacadas</h2>
+        <ul class="rejilla rejilla--destacadas" id="lista-destacadas"></ul>
+        <p style="margin-top:1.25rem"><a class="boton boton--primario" href="recetas.html" data-i18n="inicio.destacadas.ver">Ver el catálogo completo</a></p>
+      </section>
+
+      <noscript><p class="aviso" data-i18n="noscript">Este sitio necesita JavaScript para mostrar las recetas. Actívelo en su navegador.</p></noscript>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div>
+        <p class="pie__marca">Sabores de mi provincia</p>
+        <p data-i18n="pie.proyecto">Prototipo académico de la Maestría en Gestión Empresarial (EDES, UTPL).</p>
+        <p data-i18n="pie.ejemplo">Las recetas y los establecimientos que se muestran son de ejemplo hasta contar con validación y autorización escrita.</p>
+        <p data-i18n="pie.licencia">Licencia prevista del contenido: CC BY-NC-SA 4.0, con crédito a los portadores del saber.</p>
+        <p data-i18n="pie.ia">Construido con ayuda de inteligencia artificial (Claude Code); las decisiones las toma la persona responsable del proyecto.</p>
+      </div>
+      <p><a href="acerca.html" data-i18n="pie.acerca">Acerca del proyecto</a></p>
+    </div>
+  </footer>
+
+  <div id="anuncios" class="solo-lectores" role="status" aria-live="polite"></div>
+</body>
+</html>

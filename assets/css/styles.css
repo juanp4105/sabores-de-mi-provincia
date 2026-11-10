@@ -1,0 +1,363 @@
+/* ==========================================================================
+   Sabores de mi provincia — hoja de estilos
+   Diseño pensado primero para teléfono (360 px) y luego ampliado.
+   Colores: barro del tiesto, hoja de achira, maíz, café y quesillo.
+   Los contrastes se comprueban con herramientas/contraste.py
+   ========================================================================== */
+
+/* ---------- 1. Tokens de diseño ---------- */
+:root {
+  --color-fondo: #FBF6EC;          /* crema quesillo */
+  --color-superficie: #FFFFFF;     /* tarjetas */
+  --color-texto: #3B2A20;          /* café tostado */
+  --color-texto-suave: #6B5444;
+  --color-primario: #A4502E;       /* terracota */
+  --color-sobre-primario: #FFFFFF;
+  --color-secundario: #3F6B3A;     /* verde achira */
+  --color-acento: #E8B638;         /* maíz: solo decoración y fondos con texto oscuro */
+  --color-sobre-acento: #3B2A20;
+
+  --color-aviso-fondo: #FFF0C2;
+  --color-aviso-texto: #4A3000;
+  --color-aviso-borde: #8A5A00;
+  --color-revision-fondo: #F0E3D2;
+  --color-revision-texto: #4D3320;
+
+  --color-borde: #8C7664;          /* bordes de controles (≥ 3:1) */
+  --color-borde-suave: #E4D8C4;    /* solo decorativo */
+  --color-foco: #0B4F9C;
+  --color-foco-pie: #FFD166;
+
+  --color-hero-fondo: #A4502E;
+  --color-hero-texto: #FFFFFF;
+  --color-pie-fondo: #3B2A20;
+  --color-pie-texto: #FBF6EC;
+
+  /* Fondos y trazos de las ilustraciones provisionales (decorativas) */
+  --ilu-a-fondo: #F3DFA0; --ilu-a-trazo: #7A3A1F;   /* maíz */
+  --ilu-b-fondo: #DCE8D2; --ilu-b-trazo: #2F5230;   /* achira */
+  --ilu-c-fondo: #F0D3C4; --ilu-c-trazo: #7A3A1F;   /* barro */
+
+  --fuente-titulos: "Fraunces", Georgia, "Times New Roman", serif;
+  --fuente-texto: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radio: 16px;
+  --sombra: 0 1px 2px rgba(59, 42, 32, .12), 0 6px 16px rgba(59, 42, 32, .08);
+  --ancho: 70rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fondo: #1E1712;
+    --color-superficie: #2A2018;
+    --color-texto: #F4EADB;
+    --color-texto-suave: #CDBCA8;
+    --color-primario: #E59A78;
+    --color-sobre-primario: #1E1712;
+    --color-secundario: #A6D19C;
+    --color-sobre-acento: #3B2A20;
+
+    --color-aviso-fondo: #3A2D10;
+    --color-aviso-texto: #FFE3A0;
+    --color-aviso-borde: #E8B638;
+    --color-revision-fondo: #3A2C21;
+    --color-revision-texto: #F0DCC6;
+
+    --color-borde: #9C8672;
+    --color-borde-suave: #3D3025;
+    --color-foco: #FFD166;
+
+    --color-hero-fondo: #7A3A1F;
+    --color-hero-texto: #FFF8EE;
+    --color-pie-fondo: #120D0A;
+    --color-pie-texto: #F4EADB;
+
+    --ilu-a-fondo: #4A3A1C; --ilu-a-trazo: #F2C88A;
+    --ilu-b-fondo: #2A3D2A; --ilu-b-trazo: #BFE0B4;
+    --ilu-c-fondo: #4A2C20; --ilu-c-trazo: #F2B49A;
+
+    --sombra: 0 1px 2px rgba(0, 0, 0, .5), 0 6px 16px rgba(0, 0, 0, .3);
+  }
+}
+
+/* ---------- 2. Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 112.5%;               /* 18 px base; crece con la configuración del navegador */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  line-height: 1.55;
+}
+
+main { flex: 1 0 auto; }
+main:focus { outline: none; }
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 .5em;
+  color: var(--color-texto);
+}
+h1 { font-size: clamp(1.8rem, 1.2rem + 3vw, 2.8rem); }
+h2 { font-size: clamp(1.4rem, 1.15rem + 1.2vw, 1.9rem); color: var(--color-primario); }
+h3 { font-size: 1.2rem; }
+h2:focus { outline: none; }
+
+p { margin: 0 0 1em; }
+a { color: var(--color-primario); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: 3px; }
+img, svg { max-width: 100%; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+.contenedor {
+  width: min(100% - 2rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.solo-lectores {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+/* Foco visible en todos los elementos interactivos (WCAG 2.4.7 y 2.4.11) */
+:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.saltar {
+  position: absolute; left: .5rem; top: -4rem; z-index: 10;
+  background: var(--color-superficie); color: var(--color-texto);
+  padding: .75rem 1rem; border: 2px solid var(--color-texto); border-radius: 8px;
+  font-weight: 700;
+}
+.saltar:focus { top: .5rem; }
+
+/* ---------- 3. Cabecera y navegación ---------- */
+.cabecera {
+  background: var(--color-superficie);
+  border-bottom: 5px solid var(--color-acento);
+}
+.cabecera__fila {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: .75rem; padding-block: .75rem .25rem;
+}
+
+.marca {
+  display: flex; align-items: center; gap: .6rem;
+  color: var(--color-texto); text-decoration: none; min-width: 0;
+}
+.marca:hover .marca__nombre { text-decoration: underline; text-decoration-thickness: 2px; }
+.marca__logo { width: 2.6rem; height: 2.6rem; flex: none; }
+.marca__texto { display: flex; flex-direction: column; min-width: 0; }
+.marca__nombre {
+  font-family: var(--fuente-titulos); font-weight: 700;
+  font-size: 1.2rem; line-height: 1.15; color: var(--color-primario);
+}
+.marca__sub { font-size: .875rem; line-height: 1.25; color: var(--color-texto-suave); }
+
+.idioma {
+  display: flex; flex: none;
+  border: 2px solid var(--color-borde); border-radius: 999px; overflow: hidden;
+}
+.idioma__boton {
+  min-width: 2.75rem; min-height: 2.75rem; padding: 0 .5rem;
+  font: inherit; font-weight: 700; font-size: .95rem;
+  background: transparent; color: var(--color-texto);
+  border: 0; cursor: pointer;
+}
+.idioma__boton:hover { background: var(--color-revision-fondo); }
+.idioma__boton[aria-pressed="true"] {
+  background: var(--color-primario); color: var(--color-sobre-primario);
+}
+.idioma__boton:focus-visible { outline-offset: -4px; border-radius: 999px; }
+
+.nav ul {
+  display: flex; flex-wrap: wrap; gap: .25rem .35rem; padding-block: .25rem .6rem;
+}
+.nav a {
+  display: inline-flex; align-items: center; min-height: 2.75rem;
+  padding: .25rem .8rem; border-radius: 999px;
+  color: var(--color-texto); text-decoration: none; font-weight: 700; font-size: .95rem;
+}
+.nav a:hover { background: var(--color-revision-fondo); text-decoration: underline; }
+.nav a[aria-current="page"] {
+  background: var(--color-primario); color: var(--color-sobre-primario);
+}
+
+/* ---------- 4. Botones, insignias, avisos ---------- */
+.boton {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 3rem; padding: .6rem 1.25rem; border-radius: 999px;
+  font: inherit; font-weight: 700; text-decoration: none; text-align: center;
+  border: 2px solid transparent; cursor: pointer;
+}
+.boton--maiz { background: var(--color-acento); color: var(--color-sobre-acento); }
+.boton--maiz:hover { background: #F2C85A; }
+.boton--contorno { border-color: currentColor; color: var(--color-hero-texto); background: transparent; }
+.boton--contorno:hover { background: rgba(255, 255, 255, .14); }
+.boton--primario { background: var(--color-primario); color: var(--color-sobre-primario); }
+.boton--primario:hover { text-decoration: underline; }
+.hero :focus-visible { outline-color: #FFFFFF; }
+
+.insignias { display: flex; flex-wrap: wrap; gap: .4rem; }
+.insignia {
+  display: inline-block; padding: .15rem .65rem; border-radius: 999px;
+  font-family: var(--fuente-texto); font-size: .85rem; font-weight: 700; line-height: 1.4;
+  border: 1.5px solid transparent;
+}
+.insignia--revision { background: var(--color-revision-fondo); color: var(--color-revision-texto); border-color: var(--color-borde); }
+.insignia--ejemplo { background: var(--color-aviso-fondo); color: var(--color-aviso-texto); border-color: var(--color-aviso-borde); }
+.insignia--imagen { background: transparent; color: var(--color-texto-suave); border: 1.5px dashed var(--color-borde); }
+.insignia--validada { background: var(--color-secundario); color: var(--color-fondo); }
+.insignia--proximamente { background: var(--color-acento); color: var(--color-sobre-acento); }
+
+.aviso {
+  margin-block: 1.25rem;
+  padding: .85rem 1rem; border-radius: 12px;
+  background: var(--color-aviso-fondo); color: var(--color-aviso-texto);
+  border: 2px solid var(--color-aviso-borde);
+}
+.aviso p { margin: 0; }
+
+/* ---------- 5. Portada ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  background: var(--color-hero-fondo); color: var(--color-hero-texto);
+  padding-top: 2rem;
+}
+.hero__fila { position: relative; z-index: 1; display: grid; gap: 1rem; padding-bottom: 3.5rem; }
+.hero h1 { color: var(--color-hero-texto); max-width: 22ch; }
+.hero__lead { font-size: 1.1rem; max-width: 38rem; }
+.hero__acciones { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+.hero__arte { display: none; }
+.hero__ola { position: absolute; left: 0; bottom: -1px; width: 100%; height: 2.2rem; display: block; }
+.hero__ola path { fill: var(--color-fondo); }
+
+.seccion { padding-block: 2rem 1rem; }
+.seccion__intro { max-width: 40rem; color: var(--color-texto-suave); }
+
+.chips { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+.chip {
+  display: flex; flex-direction: column; justify-content: center; gap: .1rem;
+  min-height: 3.25rem; padding: .45rem .9rem;
+  background: var(--color-superficie); color: var(--color-secundario);
+  border: 2px solid var(--color-borde); border-radius: 12px;
+  text-decoration: none; font-weight: 700; line-height: 1.2;
+}
+.chip__n { font-size: .85rem; font-weight: 400; color: var(--color-texto-suave); }
+.chip:hover { border-color: var(--color-secundario); text-decoration: underline; }
+
+.banda {
+  display: grid; gap: .5rem; padding: 1.25rem; border-radius: var(--radio);
+  background: var(--color-superficie); border: 1px solid var(--color-borde-suave); box-shadow: var(--sombra);
+}
+.banda h2 { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; }
+.banda p { margin: 0; max-width: 40rem; }
+.banda .boton { justify-self: start; margin-top: .5rem; }
+
+/* ---------- 6. Tarjetas de receta ---------- */
+.rejilla { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.tarjeta {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--color-superficie); border: 1px solid var(--color-borde-suave);
+  border-radius: var(--radio); box-shadow: var(--sombra);
+}
+.tarjeta__imagen { aspect-ratio: 2 / 1; background: var(--ilu-a-fondo); }
+.tarjeta__imagen svg { display: block; width: 100%; height: 100%; }
+.tarjeta__cuerpo { display: flex; flex-direction: column; gap: .35rem; padding: .9rem 1rem 1.1rem; flex: 1; }
+.tarjeta__canton { margin: 0; font-weight: 700; font-size: .95rem; color: var(--color-secundario); }
+.tarjeta__titulo { margin: 0; font-size: 1.3rem; color: var(--color-texto); }
+.tarjeta__tipo { margin: 0; color: var(--color-texto-suave); font-size: .95rem; }
+.tarjeta .insignias { margin-top: auto; padding-top: .5rem; }
+
+.ilu { color: var(--ilu-trazo); }
+.ilu--a { --ilu-fondo: var(--ilu-a-fondo); --ilu-trazo: var(--ilu-a-trazo); }
+.ilu--b { --ilu-fondo: var(--ilu-b-fondo); --ilu-trazo: var(--ilu-b-trazo); }
+.ilu--c { --ilu-fondo: var(--ilu-c-fondo); --ilu-trazo: var(--ilu-c-trazo); }
+.ilu__fondo { fill: var(--ilu-fondo); }
+.ilu__relleno { fill: var(--ilu-trazo); opacity: .16; }
+.ilu__linea { fill: none; stroke: var(--ilu-trazo); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.ilu__masa { fill: var(--ilu-trazo); fill-opacity: .2; stroke: var(--ilu-trazo); stroke-width: 5; stroke-linejoin: round; }
+
+/* ---------- 7. Catálogo ---------- */
+.encabezado-pagina { padding-block: 2rem 0; }
+.encabezado-pagina p { max-width: 40rem; }
+.conteo { font-weight: 700; color: var(--color-texto-suave); }
+.indice { margin-block: 1.5rem; }
+.indice h2 { font-size: 1.15rem; }
+.canton {
+  padding-block: 1.25rem 1.75rem; scroll-margin-top: 1rem;
+  border-top: 3px solid var(--color-acento);
+}
+/* Los cantones con una sola receta se reparten en columnas; los que tienen varias ocupan todo el ancho */
+.catalogo { display: grid; grid-template-columns: 1fr; column-gap: 1.5rem; }
+.canton:not(.canton--varias) .rejilla { grid-template-columns: 1fr; }
+.canton__cab { display: flex; flex-direction: column; gap: .15rem; margin-bottom: 1rem; }
+.canton__cab h2 { margin: 0; }
+.canton__cab p { margin: 0; color: var(--color-texto-suave); font-size: .95rem; }
+.estado { min-height: 1.5rem; font-weight: 700; }
+.estado--error { padding: 1rem; border: 2px solid var(--color-aviso-borde); border-radius: 12px; background: var(--color-aviso-fondo); color: var(--color-aviso-texto); }
+
+/* ---------- 8. Páginas «próximamente» ---------- */
+.prox { padding-block: 2.5rem 3rem; max-width: 42rem; }
+.prox .insignia { margin-bottom: 1rem; }
+
+/* ---------- 9. Pie de página ---------- */
+.pie {
+  margin-top: 3rem; padding-block: 2rem;
+  background: var(--color-pie-fondo); color: var(--color-pie-texto); font-size: .95rem;
+}
+.pie__grid { display: grid; gap: 1.25rem; }
+.pie p { margin: 0 0 .5rem; max-width: 46rem; }
+.pie a { color: var(--color-pie-texto); font-weight: 700; }
+.pie :focus-visible { outline-color: var(--color-foco-pie); }
+.pie__marca { font-family: var(--fuente-titulos); font-size: 1.2rem; font-weight: 700; }
+
+/* ---------- 10. Pantallas medianas y grandes ---------- */
+@media (min-width: 40rem) {
+  .chips { grid-template-columns: repeat(3, 1fr); }
+  .rejilla { grid-template-columns: repeat(2, 1fr); }
+  .catalogo { grid-template-columns: repeat(2, 1fr); }
+  .canton--varias { grid-column: 1 / -1; }
+  .marca__nombre { font-size: 1.4rem; }
+  .marca__logo { width: 3rem; height: 3rem; }
+}
+
+@media (min-width: 56rem) {
+  html { font-size: 118.75%; }
+  .chips { grid-template-columns: repeat(4, 1fr); }
+  .rejilla { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .cabecera__fila { padding-block: 1rem .25rem; }
+  .rejilla--destacadas { grid-template-columns: repeat(4, 1fr); }
+  .catalogo { grid-template-columns: repeat(3, 1fr); }
+  .hero { padding-top: 3rem; }
+  .hero__fila { grid-template-columns: 1.3fr 1fr; align-items: center; padding-bottom: 5rem; }
+  .hero__arte { display: block; }
+  .hero__arte svg { width: 100%; max-width: 24rem; margin-inline: auto; display: block; }
+  .hero__ola { height: 3.2rem; }
+  .banda { grid-template-columns: 1fr auto; align-items: center; column-gap: 2rem; }
+  .banda .boton { margin-top: 0; grid-row: 1 / span 2; grid-column: 2; }
+  .pie__grid { grid-template-columns: 2fr 1fr; align-items: start; }
+}
+
+/* ---------- 11. Preferencias de accesibilidad ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+@media (forced-colors: active) {
+  .tarjeta, .chip, .aviso, .insignia { border: 2px solid CanvasText; }
+}

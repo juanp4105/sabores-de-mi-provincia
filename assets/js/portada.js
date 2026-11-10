@@ -1,0 +1,41 @@
+// Portada: acceso por cantón y recetas destacadas.
+
+import { h } from './dom.js';
+import { cargarRecetas, cargarCantones } from './datos.js';
+import { crearTarjeta, textoRecetas } from './tarjetas.js';
+
+// Recetas que se muestran como destacadas (decisión de diseño por confirmar con la persona responsable).
+const DESTACADAS = ['repe-lojano', 'humitas-de-maiz', 'miel-con-quesillo', 'cuy-con-papas'];
+
+let recetas = [];
+let cantones = [];
+
+export async function iniciar() {
+  try {
+    [recetas, cantones] = await Promise.all([cargarRecetas(), cargarCantones()]);
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+  renderizar();
+}
+
+export function renderizar() {
+  if (!recetas.length) return;
+  const cantonesPorId = new Map(cantones.map((c) => [c.id, c]));
+
+  document.getElementById('lista-cantones').replaceChildren(
+    ...cantones.map((c) => {
+      const n = recetas.filter((r) => r.canton === c.id).length;
+      return h('li', {},
+        h('a', { class: 'chip', href: `recetas.html#canton-${c.id}` },
+          c.nombre,
+          h('span', { class: 'chip__n' }, textoRecetas(n))));
+    }));
+
+  const destacadas = DESTACADAS
+    .map((id) => recetas.find((r) => r.id === id))
+    .filter(Boolean);
+  document.getElementById('lista-destacadas').replaceChildren(
+    ...destacadas.map((r, i) => crearTarjeta(r, cantonesPorId, i)));
+}
