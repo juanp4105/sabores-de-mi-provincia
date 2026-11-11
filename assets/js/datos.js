@@ -5,7 +5,7 @@ const memoria = new Map();
 
 export function cargarJSON(ruta) {
   if (!memoria.has(ruta)) {
-    const promesa = fetch(ruta).then((respuesta) => {
+    const promesa = fetch(ruta, { cache: 'no-cache' }).then((respuesta) => {
       if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta} (${respuesta.status})`);
       return respuesta.json();
     });
