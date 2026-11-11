@@ -40,7 +40,8 @@ La terminal mostrará una dirección parecida a `http://192.168.x.x:8080`; escr�
 |---|---|
 | `index.html` | Portada |
 | `recetas.html` | Catálogo de recetas agrupado por cantón |
-| `recomendador.html`, `acerca.html` | Páginas «Próximamente» (se construyen en etapas posteriores) |
+| `acerca.html` | Propósito del proyecto y vínculo con el trabajo de titulación |
+| `recomendador.html` | Página «Próximamente» (se construye en una etapa posterior) |
 | `assets/css/styles.css` | Colores, tipografía y estilos |
 | `assets/js/` | Código que arma las páginas a partir de los datos y cambia el idioma |
 | `data/` | Recetas, cantones, contornos del mapa (OpenStreetMap), establecimientos y textos de la interfaz (JSON) |
