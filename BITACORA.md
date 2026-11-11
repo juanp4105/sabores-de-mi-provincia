@@ -1,4 +1,4 @@
-# Bitácora del proyecto «Sabores de mi provincia»
+﻿# Bitácora del proyecto «Sabores de mi provincia»
 
 Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso de inteligencia artificial que exige la guía didáctica del módulo de titulación: muestra qué hizo la herramienta y qué decidió el autor.
 
@@ -30,7 +30,7 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 
 **Decisiones de Claude Code que la persona debe conocer (reversibles)**
 - La verificación de datos se escribió en **Python** (no en Node como pedía la skill) porque Node no está instalado.
-- Las **recetas destacadas** de la portada (repe lojano, humitas de maíz, miel con quesillo, cuy asado con papas) están fijadas en `assets/js/portada.js`, no en los datos, para no cambiar el esquema de `recetas.json`.
+- Las **recetas destacadas** de la portada (repe lojano, humitas de maíz, yuca con salsa de maní, cuy asado con papas) están fijadas en `assets/js/portada.js`, no en los datos, para no cambiar el esquema de `recetas.json`.
 - Las tarjetas **aún no son enlaces**: la ficha de receta es de la etapa 2.
 - Se quitó el desplazamiento suave de la página (movimiento innecesario y dificultaba comprobar el foco).
 - Identidad de Git del repositorio: marcador local `autor@sabores.local`, para no exponer ningún correo; se puede cambiar antes de publicar.
@@ -94,3 +94,10 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 - *Lo que hizo Claude Code:* descargó una sola vez los contornos de los 16 cantones desde OpenStreetMap (Nominatim y Overpass, 67 KB, sin datos personales), los simplificó y los guardó en `data/cantones-mapa.json` (30 KB). El mapa se dibuja en SVG, sin librerías, en la portada y en el catálogo, junto a la lista de cantones (el mapa nunca es la única vía). Cada cantón es un enlace con el nombre del plato; el clic lleva a su tarjeta en el catálogo.
 - *Verificación:* los 16 enlaces apuntan al plato correcto; el clic enfoca el título del cantón; funciona en español e inglés; contraste de las letras del mapa ≥ 9:1 en claro y oscuro; auditorías de estructura y contraste sin fallos.
 - *Pendientes:* la ficha completa de receta (etapa 2), a la que enlazará el mapa cuando exista. Los cantones pequeños (Olmedo, Chaguarpamba) son difíciles de tocar en un teléfono; la lista de cantones es la alternativa. Se cita «© colaboradores de OpenStreetMap» (licencia ODbL) bajo el mapa.
+
+
+### 2026-11-11 (cambios del día, parte 2)
+- Paltas: el plato típico pasa a ser **Yuca con salsa de maní** (antes «Miel con quesillo»); fuente por confirmar. La portada la destaca en lugar de la miel.
+- Se quitó de las tarjetas la etiqueta de tipo de plato (desayuno, plato fuerte, postre, entrada, bebida, sopa). El dato sigue en ecetas.json para el recomendador de la etapa 3.
+- Se subieron 9 fotos más (yuca con salsa de maní, tamal de guineo, ceviche de carne, humitas, longaniza, cuy, seco de gallina, chivo al hueco, hornado): 20 de 20 recetas ya tienen foto. **Pendiente:** declarar autor/origen/licencia de las fotos y confirmar con validadores las recetas.
+

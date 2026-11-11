@@ -53,7 +53,6 @@ export function crearTarjeta(receta, cantonesPorId, indice = 0) {
     h('div', { class: 'tarjeta__cuerpo' },
       h('p', { class: 'tarjeta__canton' }, canton ? canton.nombre : receta.canton),
       h('h3', { class: 'tarjeta__titulo' }, enIdioma(receta.nombre)),
-      h('p', { class: 'tarjeta__tipo' }, t(`tipo.${receta.tipo}`)),
       h('ul', { class: 'insignias', 'aria-label': t('insignias.etiqueta') }, insignias(receta))));
 }
 

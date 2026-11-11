@@ -689,14 +689,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/ceviche-de-carne.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato con carne picada, cebolla morada y cilantro, acompañada de yuca cocida, maíz blanco y maíz tostado; al fondo, un vaso de cerveza y un cuenco con limón.",
+          "en": "Plate of chopped beef with red onion and cilantro, served with boiled cassava, white corn and toasted corn; a glass of beer and a bowl with lime in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -752,14 +752,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/tamal-de-guineo.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Dos tamales abiertos sobre una hoja de plátano, uno oscuro y otro claro, con una lonja de queso fresco encima; al fondo, otro tamal atado con fibra y una taza de barro.",
+          "en": "Two opened tamales on a banana leaf, one dark and one light, topped with a slice of fresh cheese; another tied tamal and a clay cup in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -783,16 +783,16 @@
       "traduccion_revisada": false
     },
     {
-      "id": "miel-con-quesillo",
+      "id": "yuca-con-salsa-de-mani",
       "nombre": {
-        "es": "Miel con quesillo",
-        "en": "Cane honey with fresh cheese (quesillo)"
+        "es": "Yuca con salsa de maní",
+        "en": "Cassava with peanut sauce"
       },
       "canton": "paltas",
       "parroquia": null,
-      "tipo": "postre",
+      "tipo": "plato_fuerte",
       "ocasiones": [
-        "merienda"
+        "almuerzo"
       ],
       "descripcion": {
         "es": "",
@@ -810,19 +810,19 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/yuca-con-salsa-de-mani.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Yuca cocida cubierta con salsa de maní en un plato blanco cuadrado, con lechuga; al fondo, un cuenco de maní y una taza de café.",
+          "en": "Boiled cassava covered in peanut sauce on a square white plate with lettuce; a bowl of peanuts and a cup of coffee in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
-          "tipo": "atribucion",
-          "referencia_apa": "Prefectura de Loja. (s.f.). Gastronomía de nuestros cantones. https://prefecturaloja.gob.ec/turismo/gastronomia-de-nuestros-cantones/"
+          "tipo": "por_confirmar",
+          "referencia_apa": ""
         }
       ],
       "portador": {
@@ -869,14 +869,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/humitas-de-maiz.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Humitas envueltas en hoja de maíz sobre un plato blanco, una de ellas abierta mostrando la masa amarilla; al lado, una taza de café.",
+          "en": "Humitas wrapped in corn husks on a white plate, one opened to show the yellow dough; a cup of coffee beside it."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -927,14 +927,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/longaniza.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato de barro con arroz amarillo, dos longanizas fritas, carne frita y cebolla encurtida; al fondo, un mortero de madera y un cuenco con salsa roja.",
+          "en": "Clay plate with yellow rice, two fried longaniza sausages, fried meat and pickled onion; a wooden mortar and a bowl of red sauce in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -985,14 +985,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/seco-de-gallina-criolla.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Presas de gallina guisada con arroz blanco, yuca cocida y una rodaja de tomate; al lado, una taza de café.",
+          "en": "Stewed chicken pieces with white rice, boiled cassava and a tomato slice; a cup of coffee beside the plate."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -1044,14 +1044,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/cuy-con-papas.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Cuy asado entero sobre un plato, con papas con perejil, maíz tostado, lechuga, aguacate, tomate, cebolla y ají.",
+          "en": "Whole roasted guinea pig on a plate with parsley potatoes, toasted corn, lettuce, avocado, tomato, onion and chili."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -1103,14 +1103,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/hornado-de-gallina-criolla.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Muslo de gallina horneada y dorada con arroz, tallarín y ensalada, en un plato de barro; al fondo, un horno de leña encendido.",
+          "en": "Golden baked chicken leg with rice, noodles and salad on a clay plate; a lit wood-fired oven in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -1162,14 +1162,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/chivo-al-hueco.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Trozos de carne en salsa con arroz blanco, plátano maduro frito, aguacate y ensalada de lechuga, tomate y cebolla.",
+          "en": "Pieces of meat in sauce with white rice, fried ripe plantain, avocado and a lettuce, tomato and onion salad."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {

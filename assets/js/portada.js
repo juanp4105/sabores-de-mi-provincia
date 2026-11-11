@@ -6,7 +6,7 @@ import { crearTarjeta, textoRecetas } from './tarjetas.js';
 import { cargarMapa, crearMapa } from './mapa.js';
 
 // Recetas que se muestran como destacadas (decisión de diseño por confirmar con la persona responsable).
-const DESTACADAS = ['repe-lojano', 'humitas-de-maiz', 'miel-con-quesillo', 'cuy-con-papas'];
+const DESTACADAS = ['repe-lojano', 'humitas-de-maiz', 'yuca-con-salsa-de-mani', 'cuy-con-papas'];
 
 let recetas = [];
 let cantones = [];
