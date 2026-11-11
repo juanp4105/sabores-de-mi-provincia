@@ -162,7 +162,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--color-texto); text-decoration: none; min-width: 0;
 }
 .marca:hover .marca__nombre { text-decoration: underline; text-decoration-thickness: 2px; }
-.marca__logo { width: 2.6rem; height: 2.6rem; flex: none; }
+.marca__logo { width: 2.8rem; height: 2.8rem; flex: none; object-fit: contain; }
 .marca__texto { display: flex; flex-direction: column; min-width: 0; }
 .marca__nombre {
   font-family: var(--fuente-titulos); font-weight: 700;
@@ -358,7 +358,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .catalogo { grid-template-columns: repeat(2, 1fr); }
   .canton--varias { grid-column: 1 / -1; }
   .marca__nombre { font-size: 1.4rem; }
-  .marca__logo { width: 3rem; height: 3rem; }
+  .marca__logo { width: 3.6rem; height: 3.6rem; }
 }
 
 @media (min-width: 56rem) {
