@@ -57,9 +57,7 @@
   "prox.recomendador.texto": "This feature will arrive in a later stage of the prototype. It will run in your own browser, with no accounts or personal data, and every suggestion will come with the reason it is proposed.",
   "prox.volver": "Back to home",
   "pie.proyecto": "Academic prototype of the Master's in Business Management (EDES, UTPL).",
-  "pie.ejemplo": "The recipes and establishments shown are samples until they have validation and written authorization.",
-  "pie.licencia": "Planned content license: CC BY-NC-SA 4.0, with credit to the knowledge holders.",
-  "pie.ia": "Built with the help of artificial intelligence (Claude Code); decisions are made by the person in charge of the project.",
+  "pie.licencia": "License: CC BY-NC-SA 4.0",
   "pie.acerca": "About the project",
   "noscript": "This site needs JavaScript to show the recipes. Please enable it in your browser.",
   "acerca.h1": "About the project",
@@ -80,5 +78,6 @@
   "acerca.titulacion.2": "It is scalable because recipes, cantons and venues live in data files separate from the design: content can be added without rebuilding the site.",
   "acerca.titulacion.3": "It advances in phases: phase 1 works without a language model (the recommender runs in the browser itself); phase 2 will add a generative AI assistant.",
   "acerca.titulacion.4": "It is responsible with content: recipes and venues are examples until validated and authorized in writing by the people who hold the knowledge.",
-  "acerca.nota": "The prototype is under construction. The methodology, sources, validation, license and use of artificial intelligence will be detailed on this page in a later stage."
+  "acerca.nota": "The prototype is under construction. The methodology, sources, validation, license and use of artificial intelligence will be detailed on this page in a later stage.",
+  "pie.autora": "Created by Vilma Ordoñez"
 }

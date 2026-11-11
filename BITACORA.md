@@ -106,3 +106,5 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 
 
 - Página **Acerca del proyecto**: ahora explica el propósito y el vínculo con el trabajo de titulación (modelo de negocio ↔ prototipo como instrumento de validación), en español e inglés. Metodología, fuentes, validación, licencia y uso de IA siguen pendientes de detallar.
+
+- Pie de página: ahora dice solo «Sabores de mi provincia / Prototipo académico de la Maestría en Gestión Empresarial (EDES, UTPL) / Licencia: CC BY-NC-SA 4.0 / Elaborado por Vilma Ordoñez / 2026» (se retiraron los avisos de contenido de ejemplo y de uso de IA del pie; el uso de IA se explicará en «Acerca»).

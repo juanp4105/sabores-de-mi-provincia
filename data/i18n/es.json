@@ -57,9 +57,7 @@
   "prox.recomendador.texto": "Esta función llegará en una próxima etapa del prototipo. Funcionará en su propio navegador, sin cuentas ni datos personales, y cada sugerencia vendrá con la razón por la que se propone.",
   "prox.volver": "Volver al inicio",
   "pie.proyecto": "Prototipo académico de la Maestría en Gestión Empresarial (EDES, UTPL).",
-  "pie.ejemplo": "Las recetas y los establecimientos que se muestran son de ejemplo hasta contar con validación y autorización escrita.",
-  "pie.licencia": "Licencia prevista del contenido: CC BY-NC-SA 4.0, con crédito a los portadores del saber.",
-  "pie.ia": "Construido con ayuda de inteligencia artificial (Claude Code); las decisiones las toma la persona responsable del proyecto.",
+  "pie.licencia": "Licencia: CC BY-NC-SA 4.0",
   "pie.acerca": "Acerca del proyecto",
   "noscript": "Este sitio necesita JavaScript para mostrar las recetas. Actívelo en su navegador.",
   "acerca.h1": "Acerca del proyecto",
@@ -80,5 +78,6 @@
   "acerca.titulacion.2": "Es escalable porque las recetas, los cantones y los establecimientos viven en archivos de datos separados del diseño: se pueden sumar contenidos sin rehacer el sitio.",
   "acerca.titulacion.3": "Avanza por fases: la fase 1 funciona sin modelo de lenguaje (el recomendador corre en el propio navegador); la fase 2 incorporará un asistente con inteligencia artificial generativa.",
   "acerca.titulacion.4": "Es responsable con el contenido: las recetas y los establecimientos son de ejemplo hasta contar con validación y autorización escrita de quienes portan el saber.",
-  "acerca.nota": "El prototipo está en construcción. La metodología, las fuentes, la validación, la licencia y el uso de inteligencia artificial se detallarán en esta página en una próxima etapa."
+  "acerca.nota": "El prototipo está en construcción. La metodología, las fuentes, la validación, la licencia y el uso de inteligencia artificial se detallarán en esta página en una próxima etapa.",
+  "pie.autora": "Elaborado por Vilma Ordoñez"
 }
