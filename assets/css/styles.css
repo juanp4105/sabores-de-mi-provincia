@@ -388,3 +388,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (forced-colors: active) {
   .tarjeta, .chip, .aviso, .insignia { border: 2px solid CanvasText; }
 }
+
+/* ---------- Página «Acerca del proyecto» ---------- */
+.acerca { padding-block: 2rem 3rem; max-width: 46rem; }
+.acerca h2 { margin-top: 2.25rem; }
+.acerca h3 { margin-top: 1.5rem; font-size: 1.15rem; }
+.acerca__lead { font-size: 1.15rem; }
+.acerca__lista { list-style: disc; padding-left: 1.4rem; display: grid; gap: .5rem; margin-top: .5rem; }
+.acerca__nota { margin-top: 2.25rem; }

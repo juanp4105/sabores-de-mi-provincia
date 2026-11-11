@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acerca del proyecto (próximamente) · Sabores de mi provincia</title>
-  <meta name="description" content="Propósito, modelo por fases, metodología, fuentes, validación, licencia y uso de inteligencia artificial del prototipo.">
+  <title>Acerca del proyecto · Sabores de mi provincia</title>
+  <meta name="description" content="Propósito del prototipo y su vínculo con el trabajo de titulación de la Maestría en Gestión Empresarial (EDES, UTPL).">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="assets/img/icono.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +42,34 @@
   </header>
 
   <main id="contenido" tabindex="-1">
-    <div class="contenedor prox">
-      <p class="insignia insignia--proximamente" data-i18n="insignia.proximamente">Próximamente</p>
-      <h1 data-i18n="prox.acerca.h1">Acerca del proyecto</h1>
-      <p data-i18n="prox.acerca.texto">Aquí se explicarán el propósito, el modelo por fases, la metodología, las fuentes, la validación, la licencia y el uso de inteligencia artificial en este prototipo.</p>
-      <p><a class="boton boton--primario" href="index.html" data-i18n="prox.volver">Volver al inicio</a></p>
+    <div class="contenedor acerca">
+      <h1 data-i18n="acerca.h1">Acerca del proyecto</h1>
+      <p class="acerca__lead" data-i18n="acerca.lead">«Sabores de mi provincia» es un prototipo web que reúne la cocina tradicional de los 16 cantones de la provincia de Loja, Ecuador, para que cualquier persona pueda conocerla, cocinarla y compartirla.</p>
+      <section aria-labelledby="ac-prop">
+      <h2 id="ac-prop" data-i18n="acerca.proposito.h2">Propósito</h2>
+      <p data-i18n="acerca.proposito.p1">Buena parte de la cocina tradicional lojana se transmite en las familias y en la memoria de quienes la preparan. El proyecto propone reunirla en un solo lugar, organizada por cantón, con recetas claras y disponible en español y en inglés, para difundirla y ayudar a que no se pierda.</p>
+      <p data-i18n="acerca.proposito.p2">La plataforma está pensada primero para el teléfono, no pide cuentas ni datos personales y busca ser accesible para todas las personas (WCAG 2.2 nivel AA).</p>
+      <h3 data-i18n="acerca.ofrece.h3">Qué ofrece el prototipo</h3>
+      <ul class="acerca__lista">
+        <li data-i18n="acerca.ofrece.1">Un plato típico por cada cantón (Loja tiene cinco), con un mapa en el que se puede hacer clic en cada cantón.</li>
+        <li data-i18n="acerca.ofrece.2">Recetas con ingredientes y pasos, y un modo cocina para seguirlas con las manos ocupadas (en construcción).</li>
+        <li data-i18n="acerca.ofrece.3">Un recomendador que sugiere recetas según los gustos y la ocasión, y explica por qué (en construcción).</li>
+        <li data-i18n="acerca.ofrece.4">Interfaz en español e inglés.</li>
+      </ul>
+      </section>
+      <section aria-labelledby="ac-tit">
+      <h2 id="ac-tit" data-i18n="acerca.titulacion.h2">Vínculo con el trabajo de titulación</h2>
+      <p data-i18n="acerca.titulacion.p1">Este prototipo es el instrumento de validación del trabajo de titulación (examen complexivo) de la Maestría en Gestión Empresarial de la UTPL (EDES): «Modelo de negocio digital escalable para la difusión de la gastronomía tradicional lojana».</p>
+      <p data-i18n="acerca.titulacion.p2">El trabajo propone un modelo de negocio; el prototipo permite comprobar en la práctica si esa propuesta funciona. Personas reales lo usan y opinan mediante un grupo focal y pruebas de usabilidad, y sus resultados sirven para ajustar el modelo.</p>
+      <h3 data-i18n="acerca.titulacion.h3">Cómo se relacionan el modelo y el prototipo</h3>
+      <ul class="acerca__lista">
+        <li data-i18n="acerca.titulacion.1">El modelo define qué valor se ofrece y a quién; el prototipo lo hace visible y usable.</li>
+        <li data-i18n="acerca.titulacion.2">Es escalable porque las recetas, los cantones y los establecimientos viven en archivos de datos separados del diseño: se pueden sumar contenidos sin rehacer el sitio.</li>
+        <li data-i18n="acerca.titulacion.3">Avanza por fases: la fase 1 funciona sin modelo de lenguaje (el recomendador corre en el propio navegador); la fase 2 incorporará un asistente con inteligencia artificial generativa.</li>
+        <li data-i18n="acerca.titulacion.4">Es responsable con el contenido: las recetas y los establecimientos son de ejemplo hasta contar con validación y autorización escrita de quienes portan el saber.</li>
+      </ul>
+      </section>
+      <p class="aviso acerca__nota" data-i18n="acerca.nota">El prototipo está en construcción. La metodología, las fuentes, la validación, la licencia y el uso de inteligencia artificial se detallarán en esta página en una próxima etapa.</p>
     </div>
   </main>
 

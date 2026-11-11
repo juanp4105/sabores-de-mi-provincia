@@ -104,3 +104,5 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 
 - Loja: se cambió la **Horchata lojana** por **Guineos fritos con huevo** (desayuno; fuente por confirmar). Se retiró la foto de la horchata.
 
+
+- Página **Acerca del proyecto**: ahora explica el propósito y el vínculo con el trabajo de titulación (modelo de negocio ↔ prototipo como instrumento de validación), en español e inglés. Metodología, fuentes, validación, licencia y uso de IA siguen pendientes de detallar.
