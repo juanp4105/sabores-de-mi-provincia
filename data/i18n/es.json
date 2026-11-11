@@ -40,6 +40,11 @@
   "receta.una": "1 receta",
   "receta.varias": "{n} recetas",
 
+  "mapa.etiqueta": "Mapa de los cantones de Loja. Cada cantón es un enlace a su plato típico.",
+  "mapa.ayuda": "Toque un cantón del mapa para ver su plato típico.",
+  "mapa.atribucion.texto": "Contornos simplificados:",
+  "mapa.atribucion.enlace": "© colaboradores de OpenStreetMap",
+
   "tipo.sopa": "Sopa",
   "tipo.plato_fuerte": "Plato fuerte",
   "tipo.desayuno": "Desayuno",

@@ -32,7 +32,7 @@ CLARO = {
     "borde": "#8C7664", "foco": "#0B4F9C",
     "pie_fondo": "#3B2A20", "pie_texto": "#FBF6EC", "foco_pie": "#FFD166",
     "ilu_fondo": "#F3DFA0", "ilu_trazo": "#7A3A1F",
-    "hero_fondo": "#A4502E", "hero_texto": "#FFFFFF",
+    "hero_fondo": "#A4502E", "hero_texto": "#FFFFFF", "mapa_d": "#E8D8C0",
     "ilu_b_fondo": "#DCE8D2", "ilu_b_trazo": "#2F5230",
     "ilu_c_fondo": "#F0D3C4", "ilu_c_trazo": "#7A3A1F",
 }
@@ -45,7 +45,7 @@ OSCURO = {
     "borde": "#9C8672", "foco": "#FFD166",
     "pie_fondo": "#120D0A", "pie_texto": "#F4EADB", "foco_pie": "#FFD166",
     "ilu_fondo": "#4A3A1C", "ilu_trazo": "#F2C88A",
-    "hero_fondo": "#7A3A1F", "hero_texto": "#FFF8EE",
+    "hero_fondo": "#7A3A1F", "hero_texto": "#FFF8EE", "mapa_d": "#3F3426",
     "ilu_b_fondo": "#2A3D2A", "ilu_b_trazo": "#BFE0B4",
     "ilu_c_fondo": "#4A2C20", "ilu_c_trazo": "#F2B49A",
 }
@@ -66,6 +66,10 @@ PARES = [
     ("sobre_acento", "acento", 4.5, "Texto oscuro sobre maíz (insignias decorativas)"),
     ("pie_texto", "pie_fondo", 4.5, "Texto del pie de página"),
     ("hero_texto", "hero_fondo", 4.5, "Texto del encabezado de la portada"),
+    ("texto", "ilu_fondo", 4.5, "Nombre de cantón en el mapa (color 1)"),
+    ("texto", "ilu_b_fondo", 4.5, "Nombre de cantón en el mapa (color 2)"),
+    ("texto", "ilu_c_fondo", 4.5, "Nombre de cantón en el mapa (color 3)"),
+    ("texto", "mapa_d", 4.5, "Nombre de cantón en el mapa (color 4)"),
     ("ilu_trazo", "ilu_fondo", 3.0, "Ilustración maíz (gráfico, mínimo 3:1)"),
     ("ilu_b_trazo", "ilu_b_fondo", 3.0, "Ilustración achira (gráfico, mínimo 3:1)"),
     ("ilu_c_trazo", "ilu_c_fondo", 3.0, "Ilustración barro (gráfico, mínimo 3:1)"),

@@ -40,6 +40,11 @@
   "receta.una": "1 recipe",
   "receta.varias": "{n} recipes",
 
+  "mapa.etiqueta": "Map of Loja's cantons. Each canton links to its traditional dish.",
+  "mapa.ayuda": "Tap a canton on the map to see its traditional dish.",
+  "mapa.atribucion.texto": "Simplified outlines:",
+  "mapa.atribucion.enlace": "© OpenStreetMap contributors",
+
   "tipo.sopa": "Soup",
   "tipo.plato_fuerte": "Main dish",
   "tipo.desayuno": "Breakfast",

@@ -3,6 +3,7 @@
 import { h } from './dom.js';
 import { cargarRecetas, cargarCantones } from './datos.js';
 import { crearTarjeta, textoRecetas } from './tarjetas.js';
+import { cargarMapa, crearMapa } from './mapa.js';
 
 // Recetas que se muestran como destacadas (decisión de diseño por confirmar con la persona responsable).
 const DESTACADAS = ['repe-lojano', 'humitas-de-maiz', 'miel-con-quesillo', 'cuy-con-papas'];
@@ -12,7 +13,7 @@ let cantones = [];
 
 export async function iniciar() {
   try {
-    [recetas, cantones] = await Promise.all([cargarRecetas(), cargarCantones()]);
+    [recetas, cantones] = await Promise.all([cargarRecetas(), cargarCantones(), cargarMapa()]);
   } catch (error) {
     console.error(error);
     return;
@@ -23,6 +24,9 @@ export async function iniciar() {
 export function renderizar() {
   if (!recetas.length) return;
   const cantonesPorId = new Map(cantones.map((c) => [c.id, c]));
+
+  const mapa = crearMapa(recetas, cantones);
+  document.getElementById('mapa').replaceChildren(...(mapa ? [mapa] : []));
 
   document.getElementById('lista-cantones').replaceChildren(
     ...cantones.map((c) => {

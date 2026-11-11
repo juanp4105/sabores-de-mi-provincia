@@ -1,4 +1,4 @@
-# Sabores de mi provincia
+﻿# Sabores de mi provincia
 
 **Cocina tradicional de Loja, Ecuador.** Prototipo web de una plataforma de recetas de los 16 cantones de la provincia de Loja, con recomendador basado en contenido, modo cocina, mapa por cantón, español e inglés, y accesibilidad WCAG 2.2 AA.
 
@@ -43,7 +43,7 @@ La terminal mostrará una dirección parecida a `http://192.168.x.x:8080`; escr�
 | `recomendador.html`, `acerca.html` | Páginas «Próximamente» (se construyen en etapas posteriores) |
 | `assets/css/styles.css` | Colores, tipografía y estilos |
 | `assets/js/` | Código que arma las páginas a partir de los datos y cambia el idioma |
-| `data/` | Recetas, cantones, establecimientos y textos de la interfaz (JSON) |
+| `data/` | Recetas, cantones, contornos del mapa (OpenStreetMap), establecimientos y textos de la interfaz (JSON) |
 | `herramientas/` | Servidor local, verificador de datos y cálculo de contrastes |
 | `evidencias/` | Informes de accesibilidad y capturas para el tribunal |
 | `BITACORA.md` | Registro de cada sesión de trabajo con IA |
@@ -72,3 +72,4 @@ Este prototipo se construye con ayuda de Claude Code (Anthropic). Cada sesión q
 ## Licencia
 
 Código: por definir. Contenido de las recetas: CC BY-NC-SA 4.0, con crédito a los portadores del saber (cuando exista su consentimiento escrito).
+

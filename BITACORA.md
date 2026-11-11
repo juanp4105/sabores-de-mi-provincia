@@ -87,3 +87,10 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 - **Fotos:** falta registrar el origen, el autor y la licencia de las 11 imágenes. Antes de usarlas como fotos reales de la receta, confirmar si son fotografías o imágenes generadas con IA, y declararlo.
 - **Clasificación:** el tipo y la ocasión de los dos platos nuevos (desayuno y plato fuerte) son propuestas por confirmar con los validadores.
 - La semilla original dentro de `.claude/skills/` aún lista los platos anteriores; la fuente vigente es `data/recetas.json`.
+
+**Mapa clicable de la provincia (misma sesión)**
+- *Lo que pidió el autor:* incluir el mapa de la provincia de Loja con los cantones clicables, para entrar al plato típico de cada uno.
+- *Decisión del autor:* usar los límites reales de OpenStreetMap (en lugar de un dibujo esquemático o de calcar una imagen).
+- *Lo que hizo Claude Code:* descargó una sola vez los contornos de los 16 cantones desde OpenStreetMap (Nominatim y Overpass, 67 KB, sin datos personales), los simplificó y los guardó en `data/cantones-mapa.json` (30 KB). El mapa se dibuja en SVG, sin librerías, en la portada y en el catálogo, junto a la lista de cantones (el mapa nunca es la única vía). Cada cantón es un enlace con el nombre del plato; el clic lleva a su tarjeta en el catálogo.
+- *Verificación:* los 16 enlaces apuntan al plato correcto; el clic enfoca el título del cantón; funciona en español e inglés; contraste de las letras del mapa ≥ 9:1 en claro y oscuro; auditorías de estructura y contraste sin fallos.
+- *Pendientes:* la ficha completa de receta (etapa 2), a la que enlazará el mapa cuando exista. Los cantones pequeños (Olmedo, Chaguarpamba) son difíciles de tocar en un teléfono; la lista de cantones es la alternativa. Se cita «© colaboradores de OpenStreetMap» (licencia ODbL) bajo el mapa.

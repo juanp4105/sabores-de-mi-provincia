@@ -111,6 +111,15 @@ def main():
         if cid != "loja" and por_canton.get(cid) != 1:
             error(f"{cid} debe tener 1 receta y tiene {por_canton.get(cid, 0)}")
 
+    # Mapa: cada cantón debe tener su contorno, y cada contorno su cantón
+    mapa = cargar("data/cantones-mapa.json")["cantones"]
+    ids_mapa = {c["id"] for c in mapa}
+    for cid in ids_canton:
+        if cid not in ids_mapa:
+            error(f"Mapa: falta el contorno del cantón «{cid}»")
+    for cid in ids_mapa - set(ids_canton):
+        error(f"Mapa: hay un contorno sin cantón «{cid}»")
+
     # Textos de interfaz: mismas claves en español e inglés
     es, en = cargar("data/i18n/es.json"), cargar("data/i18n/en.json")
     for k in sorted(set(es) ^ set(en)):
