@@ -62,3 +62,28 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 - Recoger las respuestas de la persona sobre el diseño y aplicarlas.
 - Mover el proyecto a una ruta corta (con confirmación).
 - Cuando la persona apruebe la etapa 1: iniciar la etapa 2.
+
+---
+
+## Sesión 2026-11-11
+
+**Lo que pidió el autor**
+- Cambiar el plato típico de Gonzanamá a «Sango con huevo frito» y el de Espíndola a «Yuca cuadrada».
+- Colocar las fotos de Loja (5) y de otros cantones: chanfaina (Celica), yuca cuadrada (Espíndola), sango con huevo frito (Gonzanamá), molloco (Chaguarpamba), madre olla (Calvas) y cecina (Catamayo).
+- Quitar la insignia «Imagen provisional» en las recetas con foto.
+- Preparar una presentación y una rúbrica de calificación para el focus group (archivos locales: no se publican).
+
+**Lo que hizo Claude Code**
+- Renombró las dos recetas (ids `sango-con-huevo-frito` y `yuca-cuadrada`), con nombre en inglés propuesto y sin revisar.
+- Copió 11 fotos a `assets/img/recetas/` con texto alternativo en español e inglés, y las conectó a los datos.
+- Publicó el proyecto en GitHub Pages y registró su dirección en el README (sesión anterior).
+
+**Decisiones del autor**
+- Los dos platos nuevos reemplazan a «Arveja con guineo» y «Achiras con queso».
+- Las recetas con foto no llevan la insignia «Imagen provisional» (9 recetas siguen con ilustración y esa insignia).
+
+**Pendientes**
+- **Fuentes:** las fuentes anteriores respaldaban los platos reemplazados, por lo que Sango con huevo frito y Yuca cuadrada quedaron como «fuente por confirmar». Necesitan una fuente real.
+- **Fotos:** falta registrar el origen, el autor y la licencia de las 11 imágenes. Antes de usarlas como fotos reales de la receta, confirmar si son fotografías o imágenes generadas con IA, y declararlo.
+- **Clasificación:** el tipo y la ocasión de los dos platos nuevos (desayuno y plato fuerte) son propuestas por confirmar con los validadores.
+- La semilla original dentro de `.claude/skills/` aún lista los platos anteriores; la fuente vigente es `data/recetas.json`.

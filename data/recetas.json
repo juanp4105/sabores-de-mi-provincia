@@ -337,14 +337,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/madre-olla.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Cuenco de barro con un guiso de frijoles, mote, choclo, plátano maduro, yuca, tubérculos naranjas, col y trozos de carne.",
+          "en": "Clay bowl with a stew of beans, hominy, corn, ripe plantain, cassava, orange tubers, cabbage and pieces of meat."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -395,14 +395,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/cecina.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato de barro con lonjas de carne asada sobre trozos de yuca cocida, con ensalada de cebolla morada y tomate, y hojas de lechuga.",
+          "en": "Clay plate with grilled meat slices over boiled cassava pieces, with a red onion and tomato salad and lettuce leaves."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -453,14 +453,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/chanfaina.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato con un guiso de carne de cerdo en salsa roja, acompañado de yuca cocida, choclo con queso desmenuzado, arroz blanco y mote; al fondo, encurtido de cebolla y queso.",
+          "en": "Plate with a pork stew in red sauce, served with boiled cassava, corn on the cob with crumbled cheese, white rice and hominy; onion relish and cheese in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -515,14 +515,14 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/molloco.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato de barro decorado con una bola grande y varias bolitas doradas de masa, adornadas con cilantro; al fondo, plátanos verdes y un cuenco con encurtido.",
+          "en": "Decorated clay plate with one large ball and several small golden dough balls garnished with cilantro; green plantains and a bowl of relish in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
@@ -546,72 +546,14 @@
       "traduccion_revisada": false
     },
     {
-      "id": "achiras-con-queso",
+      "id": "yuca-cuadrada",
       "nombre": {
-        "es": "Achiras con queso",
-        "en": "Achira root with fresh cheese"
+        "es": "Yuca cuadrada",
+        "en": "Yuca cuadrada (cassava dish)"
       },
       "canton": "espindola",
       "parroquia": "Jimbura",
-      "tipo": "entrada",
-      "ocasiones": [
-        "merienda"
-      ],
-      "descripcion": {
-        "es": "",
-        "en": ""
-      },
-      "historia": {
-        "es": "",
-        "en": ""
-      },
-      "porciones": 4,
-      "tiempo_min": null,
-      "dificultad": null,
-      "ingredientes": [],
-      "pasos": [],
-      "consejos": [],
-      "alergenos": [],
-      "imagen": {
-        "src": null,
-        "alt": {
-          "es": "",
-          "en": ""
-        },
-        "autor": null,
-        "licencia": null,
-        "provisional": true
-      },
-      "fuentes": [
-        {
-          "tipo": "atribucion",
-          "referencia_apa": "Prefectura de Loja. (s.f.). Gastronomía de nuestros cantones. https://prefecturaloja.gob.ec/turismo/gastronomia-de-nuestros-cantones/"
-        }
-      ],
-      "portador": {
-        "nombre": null,
-        "comunidad": null,
-        "consentimiento": false
-      },
-      "validacion": {
-        "estado": "pendiente",
-        "revisor": null,
-        "rol": null,
-        "fecha": null
-      },
-      "establecimientos": [],
-      "contenido_ejemplo": true,
-      "traduccion_revisada": false
-    },
-    {
-      "id": "arveja-con-guineo",
-      "nombre": {
-        "es": "Arveja con guineo",
-        "en": "Pea and green banana soup"
-      },
-      "canton": "gonzanama",
-      "parroquia": null,
-      "tipo": "sopa",
+      "tipo": "plato_fuerte",
       "ocasiones": [
         "almuerzo"
       ],
@@ -631,19 +573,77 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": null,
+        "src": "assets/img/recetas/yuca-cuadrada.webp",
         "alt": {
-          "es": "",
-          "en": ""
+          "es": "Plato blanco con trozos cuadrados de color amarillo en salsa y carne desmechada encima, con cilantro; al fondo, encurtido de cebolla con tomate y una salsa roja.",
+          "en": "White plate with yellow square-cut pieces in sauce and shredded meat on top, with cilantro; onion and tomato relish and a red sauce in the background."
         },
         "autor": null,
         "licencia": null,
-        "provisional": true
+        "provisional": false
       },
       "fuentes": [
         {
-          "tipo": "atribucion",
-          "referencia_apa": "Prefectura de Loja. (s.f.). Gastronomía de nuestros cantones. https://prefecturaloja.gob.ec/turismo/gastronomia-de-nuestros-cantones/"
+          "tipo": "por_confirmar",
+          "referencia_apa": ""
+        }
+      ],
+      "portador": {
+        "nombre": null,
+        "comunidad": null,
+        "consentimiento": false
+      },
+      "validacion": {
+        "estado": "pendiente",
+        "revisor": null,
+        "rol": null,
+        "fecha": null
+      },
+      "establecimientos": [],
+      "contenido_ejemplo": true,
+      "traduccion_revisada": false
+    },
+    {
+      "id": "sango-con-huevo-frito",
+      "nombre": {
+        "es": "Sango con huevo frito",
+        "en": "Sango with fried egg"
+      },
+      "canton": "gonzanama",
+      "parroquia": null,
+      "tipo": "desayuno",
+      "ocasiones": [
+        "desayuno"
+      ],
+      "descripcion": {
+        "es": "",
+        "en": ""
+      },
+      "historia": {
+        "es": "",
+        "en": ""
+      },
+      "porciones": 4,
+      "tiempo_min": null,
+      "dificultad": null,
+      "ingredientes": [],
+      "pasos": [],
+      "consejos": [],
+      "alergenos": [],
+      "imagen": {
+        "src": "assets/img/recetas/sango-con-huevo-frito.webp",
+        "alt": {
+          "es": "Plato de barro con una crema espesa de color café, un huevo frito, un trozo de queso fresco y un plátano maduro frito; a un lado, una taza de café, y arriba a la izquierda, una mazorca.",
+          "en": "Clay plate with a thick brown purée, a fried egg, a piece of fresh cheese and a fried ripe plantain; a cup of coffee on one side and an ear of corn at the top left."
+        },
+        "autor": null,
+        "licencia": null,
+        "provisional": false
+      },
+      "fuentes": [
+        {
+          "tipo": "por_confirmar",
+          "referencia_apa": ""
         }
       ],
       "portador": {
