@@ -101,3 +101,6 @@ Registro de sesiones de trabajo con Claude Code. Sirve como declaración del uso
 - Se quitó de las tarjetas la etiqueta de tipo de plato (desayuno, plato fuerte, postre, entrada, bebida, sopa). El dato sigue en ecetas.json para el recomendador de la etapa 3.
 - Se subieron 9 fotos más (yuca con salsa de maní, tamal de guineo, ceviche de carne, humitas, longaniza, cuy, seco de gallina, chivo al hueco, hornado): 20 de 20 recetas ya tienen foto. **Pendiente:** declarar autor/origen/licencia de las fotos y confirmar con validadores las recetas.
 
+
+- Loja: se cambió la **Horchata lojana** por **Guineos fritos con huevo** (desayuno; fuente por confirmar). Se retiró la foto de la horchata.
+

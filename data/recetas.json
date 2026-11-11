@@ -248,17 +248,16 @@
       "traduccion_revisada": false
     },
     {
-      "id": "horchata-lojana",
+      "id": "guineos-fritos-con-huevo",
       "nombre": {
-        "es": "Horchata lojana",
-        "en": "Horchata lojana (herbal drink)"
+        "es": "Guineos fritos con huevo",
+        "en": "Fried green bananas with egg"
       },
       "canton": "loja",
       "parroquia": null,
-      "tipo": "bebida",
+      "tipo": "desayuno",
       "ocasiones": [
-        "desayuno",
-        "merienda"
+        "desayuno"
       ],
       "descripcion": {
         "es": "",
@@ -276,10 +275,10 @@
       "consejos": [],
       "alergenos": [],
       "imagen": {
-        "src": "assets/img/recetas/horchata-lojana.webp",
+        "src": "assets/img/recetas/guineos-fritos-con-huevo.webp",
         "alt": {
-          "es": "Jarra y vaso de vidrio con una bebida roja; alrededor, cuencos de madera con hierbas secas y flores, medio limón y hojas de menta.",
-          "en": "Glass pitcher and glass with a red drink; around them, wooden bowls with dried herbs and flowers, half a lemon and mint leaves."
+          "es": "Plato de barro con láminas de guineo fritas y un huevo frito encima; al lado, una taza de café, un cuenco con salsa verde y un tenedor sobre una servilleta.",
+          "en": "Clay plate of fried green banana slices topped with a fried egg; a cup of coffee, a small bowl of green sauce and a fork on a napkin beside it."
         },
         "autor": null,
         "licencia": null,
@@ -287,8 +286,8 @@
       },
       "fuentes": [
         {
-          "tipo": "atribucion",
-          "referencia_apa": "Pendiente: confirmar la atribución en Vizhco y Sacta (2022) o en Lima Campoverde (2017)."
+          "tipo": "por_confirmar",
+          "referencia_apa": ""
         }
       ],
       "portador": {

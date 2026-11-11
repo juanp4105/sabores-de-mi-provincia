@@ -1,4 +1,4 @@
-{
+﻿{
   "nota": "Establecimientos FICTICIOS para demostrar la ficha 'Dónde probar este plato' del modelo de negocio (fase 2). La interfaz debe rotularlos como 'Ejemplo ficticio' y, si patrocinado es true, como 'Patrocinado'. Reemplazar solo con establecimientos reales que hayan dado autorización escrita.",
   "establecimientos": [
     {
@@ -36,7 +36,7 @@
       "nombre": "Cafetería Modelo (ficticia)",
       "canton": "loja",
       "recetas": [
-        "horchata-lojana",
+        "guineos-fritos-con-huevo",
         "tamal-lojano"
       ],
       "descripcion": {
